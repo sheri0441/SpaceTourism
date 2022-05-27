@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navstyle{
+        @apply p-6 relative text-white w-full md:w-auto text-left md:text-center md:p-0
+
+    }
+}
+
+.current::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    top: 0%;
+    right: 0%;
+}
+
+.home{
+    background-image: url('./assets/home/background-home-mobile.jpg');
+}
+
+.destination{
+    background-image: url('./assets/destination/background-destination-mobile.jpg');
+}
+.planetOption input[type = "radio"]{
+    display: none;
+}
+.planetOption input[type = "radio"]+label{
+    position: relative;
+    font-size: 14px;
+}
+.planetOption input[type = "radio"]:checked+label{
+    color: white;
+}
+.planetOption input[type = "radio"]:checked+label::after{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0%;
+    height: 3px;
+    width: 100%;
+    transform: translateX(0%);
+    background-color: white ;
+}
+.crew{
+    background-image: url('./assets/crew/background-crew-mobile.jpg');
+}
+.crewOption label{
+    display: none;
+}
+.crewOption input[type="radio"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.529);
+    border-radius: 50%;
+}
+.crewOption input[type="radio"]:checked {
+    background: white;
+
+}
+.technology{
+    background-image: url('./assets/technology/background-technology-mobile.jpg');
+}
+.technologyOption input[type="radio"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.technologyOption input[type="radio"] +label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px inset white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.technologyOption input[type="radio"]:hover +label {
+    background-color: white;
+    color: #0B0D17;
+}
+.technologyOption input[type="radio"]:checked +label {
+    background-color: white;
+    color: #0B0D17;
+}
+
+@media screen and (min-width:768px) {
+    .current::after{
+        content: '';
+        position: absolute;
+        top: 240%;
+        left: 0%;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+    .link{
+        position: relative;
+    }
+    .link::after{
+        content: '';
+        position: absolute;
+        top: 240%;
+        left: 50%;
+        width: 0%;
+        height: 3px;
+        background-color: white;
+        transform: translateX(-50%);
+        transition: width 0.6s ease-in-out;
+    }
+    .link:hover::after{
+        width: 100%;
+        transition: width 0.6s ease-in-out;
+    }
+    .home{
+        background-image: url('./assets/home/background-home-tablet.jpg');
+    }
+    .shadowstyle{
+        box-shadow: none;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+    .shadowstyle:hover{
+        transition: box-shadow 0.5s ease-in-out;
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.25);
+    }
+    .destination{
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+    }
+    .planetOption input[type = "radio"]+label{
+        font-size: 1rem;
+    }
+    .planetOption input[type = "radio"]:hover+label{
+        color: white;
+        
+    }
+    .planetOption input[type = "radio"] +label::after{
+        content: "";
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        height: 3px;
+        width: 0%;
+        background-color: white ;
+        transform: translateX(-50%);
+        transition: width 0.5s ease-in-out;
+    }
+    .planetOption input[type = "radio"]:hover +label::after{
+        width: 100%;
+        transition: width 0.5s ease-in-out;
+        
+    }
+    .crew{
+        background-image: url('./assets/crew/background-crew-tablet.jpg');
+    }
+    .crewOption input[type="radio"]:hover {
+        background: white;
+    }
+    .technology{
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+    }
+    .technologyOption input[type="radio"] +label {
+        width: 60px;
+        height: 60px;
+    }   
+}
+
+@media screen and (min-width:1280px) {
+    .home{
+        background-image: url('./assets/home/background-home-desktop.jpg');
+    }
+    .destination{
+        background-image: url('./assets/destination/background-destination-desktop.jpg');
+    }
+    .crew{
+        background-image: url('./assets/crew/background-crew-desktop.jpg');
+    }
+    .crewOption input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+    .technology{
+        background-image: url('./assets/technology/background-technology-desktop.jpg');
+    }
+    .technologyOption input[type="radio"] +label {
+        width: 80px;
+        height: 80px;
+    } 
+}
