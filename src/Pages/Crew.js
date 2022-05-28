@@ -60,7 +60,7 @@ const Crew = () => {
     }
     
     return (
-        <div className="crew min-h-screen md:h-auto lg:h-screen w-screen bg-cover flex justify-start flex-col md:flex-col-reverse text-center  lg:text-left lg:justify-between 2xl:justify-center text-neutral max-w-screen-desktop mx-auto" onTouchStart={startTouch} onTouchMove={movingTouch} onTouchEnd={endTouch}>
+        <div className="crew min-h-screen md:h-auto lg:h-screen w-screen bg-cover flex justify-start flex-col md:flex-col-reverse text-center  lg:text-left lg:justify-between 2xl:justify-center text-neutral max-w-screen-desktop mx-auto loadingAnimation" onTouchStart={startTouch} onTouchMove={movingTouch} onTouchEnd={endTouch}>
             <div className="w-4/5 mx-auto mt-24 max-w-screen-desktop fadeAnimation">
                 <p className="font-BarlowCond text-opacity-5 md:text-xl lg:text-3xl tracking-wide md:tracking-wider lg:tracking-widest uppercase md:text-left lg:justify-between"><span className="text-neutral/30 mr-5 font-bold">02</span>Meet your crew</p>
                 <div className="md:flex md:flex-col-reverse lg:flex-row-reverse lg:justify-between md:mb-0">
@@ -69,7 +69,7 @@ const Crew = () => {
                         <img className=" h-56 mt-3 md:h-[532px] lg:max-h-[607px] mx-auto" src={image} alt="" />  
                         <hr className="md:hidden"/>
                     </div>
-                    <div className="w-full max-w-[615px] flex flex-col-reverse md:flex-col lg:mt-10 lg:pt-20 mx-auto">
+                    <div className="w-full max-w-[615px]  flex flex-col-reverse md:flex-col lg:mt-10  mx-auto lg:mx-0 ">
                         <div className="md:mt-5 lg:h-full lg:mt-auto ">
                             <p className="font-Bellefair md:text-2xl lg:text-4xl uppercase text-neutral/40 md:mt-5 lg:mt-0 md:hidden lg:block">{role}</p>
                             <h1 className="font-Bellefair mt-2 mb-4 text-2xl md:text-5xl lg:text-6xl uppercase md:mt-5 lg:mt-4 lg:mb-7">{name}</h1>

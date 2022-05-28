@@ -20,7 +20,7 @@ const Navigation = () => {
     }
 
     return(
-        <div className="w-full fixed flex items-start md:items-center lg:mt-10 z-50 top-0 left-2/4 max-w-screen-desktop -translate-x-1/2 ">
+        <div className=" w-full fixed flex items-start md:items-center lg:mt-10 z-50 top-0 left-2/4 max-w-screen-desktop -translate-x-1/2 ">
             <div className=" w-full flex flex-row justify-between items-center px-4 pt-3">
                 <Link to="/">
                     <img 
@@ -37,7 +37,7 @@ const Navigation = () => {
             </div>
             <hr className="hidden lg:block w-[150%] -mr-3 xl:w-[700%] xl:-mr-40 relative z-20"/>
 
-            <div className=" flex-col backdrop-blur-lg bg-white/30 h-screen Nav w-full py-8 md:py-0 md:w-auto md:h-full md:bg-primary/30 md:px-12  hidden md:flex"> 
+            <div className=" flex-col backdrop-blur-lg bg-white/30  h-screen Nav w-full py-8 md:py-0 md:w-auto md:h-full md:bg-primary/30 md:px-12  hidden md:flex"> 
                 <img 
                     className="cursor-pointer w-5 self-end mr-6 md:hidden"
                     src={Close} 

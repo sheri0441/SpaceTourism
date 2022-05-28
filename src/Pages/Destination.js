@@ -28,7 +28,7 @@ const Destination = () => {
     }
 
     return (
-        <div className="destination min-h-screen md:h-auto lg:h-screen w-screen bg-cover flex justify-start flex-col text-center text-neutral lg:justify-center  lg:text-left max-w-screen-desktop mx-auto ">
+        <div className="destination min-h-screen md:h-auto lg:h-screen w-screen bg-cover flex justify-start flex-col text-center text-neutral lg:justify-center  lg:text-left max-w-screen-desktop mx-auto loadingAnimation ">
                 <div className="w-4/5 mx-auto mt-24 fadeAnimation">
                     <p className="font-BarlowCond text-opacity-5 md:text-xl lg:text-3xl tracking-wide md:tracking-wider lg:tracking-widest uppercase md:text-left"><span className="text-neutral/30 mr-5 font-bold">01</span>Pick your destination</p>
                     <div className="lg:flex lg:justify-evenly lg:items-start mt-10">

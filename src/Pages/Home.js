@@ -6,7 +6,7 @@ const Home = () => {
 
     return(
         <div
-        className="home min-h-screen py-0 lg:min-h-screen bg-no-repeat bg-cover flex flex-col justify-evenly lg:flex-row lg:items-center  max-w-screen-desktop mx-auto w-full min-w-[100vw} text-white"
+        className="home min-h-screen py-0 lg:min-h-screen bg-no-repeat bg-cover flex flex-col justify-evenly lg:flex-row lg:items-center  max-w-screen-desktop mx-auto w-full min-w-[100vw} text-white loadingAnimation"
         >
           <div className="text-neutral text-center lg:text-left mb-24 mt-36  lg:mt-0 lg:mb-0 fadeAnimation">
             <h5 className="font-BarlowCond text-opacity-5 md:text-xl lg:text-3xl tracking-wide md:tracking-wider lg:tracking-widest">SO, YOU WANT TO TRAVEL TO</h5>
